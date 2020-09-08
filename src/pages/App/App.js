@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import FindCandidates from "../../components/FindCandidates/FindCandidates";
+import FindPollLocation from "../../components/FindPollLocation/FindPollLocation";
+import RegisterVoter from "../../components/RegisterVoter/RegisterVoter";
+import WhatToBring from "../../components/WhatToBring/WhatToBring";
 
 export default class App extends Component {
   constructor() {
     super();
-    this.state = {
-
-    };
-  };
+    this.state = {};
+  }
 
   render() {
     return (
@@ -18,5 +20,4 @@ export default class App extends Component {
       </div>
     );
   }
-
 }
