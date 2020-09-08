@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Route, Switch } from 'react-router-dom'
 import "./App.css";
 import FindCandidates from "../../components/FindCandidates/FindCandidates";
 import FindPollLocation from "../../components/FindPollLocation/FindPollLocation";
@@ -17,6 +18,9 @@ export default class App extends Component {
         <header className="App-header">
           <h1>Election 2020</h1>
         </header>
+        <Switch>
+          
+        </Switch>
       </div>
     );
   }
