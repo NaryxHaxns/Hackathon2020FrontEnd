@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function WhatToBring() {
+const WhatToBring = (props) => {
   return (
     <div className="WhatToBring">
       <h1>What To Bring</h1>
     </div>
   );
 }
+
+export default WhatToBring;

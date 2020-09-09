@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function FindCandidates() {
+const FindCandidates = (props) => {
   return (
     <div className="FindCandidates">
       <h1>Find Candidates</h1>
     </div>
   );
 }
+
+export default FindCandidates;
