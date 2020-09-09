@@ -6,6 +6,7 @@ import FindCandidates from "../../components/FindCandidates/FindCandidates";
 import FindPollLocation from "../../components/FindPollLocation/FindPollLocation";
 import RegisterVoter from "../../components/RegisterVoter/RegisterVoter";
 import WhatToBring from "../../components/WhatToBring/WhatToBring";
+import Landing from "../../components/Landing/Landing"
 
 export default class App extends Component {
   constructor() {
@@ -21,18 +22,21 @@ export default class App extends Component {
         </header>
         <Switch>
           <Route exact path='/' render={() =>
+            <Landing />
+          } />
+          <Route exact path='/Clock' render={() =>
             <CountdownClock />
           } />
-          <Route exact path='/' render={() =>
+          <Route exact path='/FindCandidates' render={() =>
             <FindCandidates />
           } />
-          <Route exact path='/' render={() =>
+          <Route exact path='/FindPollLocation' render={() =>
             <FindPollLocation />
           } />
-          <Route exact path='/' render={() =>
+          <Route exact path='/RegisterVoter' render={() =>
             <RegisterVoter />
           } />
-          <Route exact path='/' render={() =>
+          <Route exact path='/WhatToBring' render={() =>
             <WhatToBring />
           } />
         </Switch>
