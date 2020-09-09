@@ -1,43 +1,60 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const CountdownClock = (props) => {
-  const electionDate = "2020-11-03";
+  //findTimeRemaining function
+  const findTimeRemaining = () => {
+    let year = new Date().getFullYear();
+    const difference = +new Date(`11/03/${year}`) - +new Date();
+    let timeRemaining = {};
+    if (difference > 0) {
+      timeRemaining = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    }
+    return timeRemaining;
+  };
+  //end function
 
-  function getCountdown(endtime) {
-    const total = Date.parse(endtime) - Date.parse(new Date());
-    const seconds = Math.floor((total / 1000) % 60);
-    const minutes = Math.floor((total / 1000 / 60) % 60);
-    const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-    const days = Math.floor(total / (1000 * 60 * 60 * 24));
+  const [timeRemaining, setTimeRemaining] = useState(findTimeRemaining());
+  const [year] = useState(new Date().getFullYear());
 
-    return {
-      total,
-      days,
-      hours,
-      minutes,
-      seconds,
-    };
-  }
+  //UseEffect function
+  useEffect(() => {
+    setTimeout(() => {
+      setTimeRemaining(findTimeRemaining());
+    }, 1000);
+  });
 
-  function initializeClock(id, endtime) {
-    const clock = document.getElementById(id)
-    const timeinterval = setInterval(() => {
-        const t = getCountdown(endtime);
-        clock.innerHTML = 'days: ' + t.days + '<br>' +
-        'hours: ' + t.hours + '<br>' +
-        'minutes: ' + t.minutes + '<br>' +
-        'seconds: ' + t.seconds;
-        if (t.total <= 0) {
-            clearInterval(timeinterval);
-        }
-    },1000);
-  }
+  const timerComponents = [];
 
+  Object.keys(timeRemaining).forEach((interval) => {
+    if (!timeRemaining[interval]) {
+      return;
+    }
+    timerComponents.push(
+      <span>
+        {timeRemaining[interval]} {interval}{" "}
+      </span>
+    );
+  });
+
+  //end funciton
+
+  //return
   return (
-    <div id="CounterClock">
-
+    <div>
+      <h1>Countdown to Election {year}</h1>
+      {timerComponents.length ? (
+        timerComponents
+      ) : (
+        <span>It's Time To Vote!</span>
+      )}
     </div>
   );
+  //end return
 };
 
 export default CountdownClock;

@@ -1,7 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect(
-'
-',
+mongoose.connect(,
 { useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
