@@ -1,15 +1,15 @@
-const db = require('../models');
+const dbOfficials = require('../../models/official');
 
 const index = (req, res) => {
-  db.Officials.find({}, (err, foundOfficials) => {
+  dbOfficials.find({}, (err, foundOfficials) => {
     if (err) console.log("Error in official#index:", err);
 
-    res.status(200).json(foundOfficial);
+    res.status(200).json(foundOfficials);
   });
 };
 
 const show = (req, res) => {
-  db.Officials.findById(req.params.id, (err, foundOfficial) => {
+  dbOfficials.findById(req.params.id, (err, foundOfficial) => {
     if (err) console.log("Error in official#show:", err);
 
     res.status(200).json(foundOfficial);
