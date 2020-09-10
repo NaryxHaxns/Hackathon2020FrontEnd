@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Link } from 'react-router-dom'
 import "./App.css";
 import CountdownClock from "../../components/CountdownClock/CountdownClock"
 import FindCandidates from "../FindCandidates/FindCandidates";
@@ -9,6 +9,7 @@ import WhatToBring from "../../components/WhatToBring/WhatToBring";
 import Landing from "../../components/Landing/Landing"
 import President from "../President/President"
 import CandidateShow from '../CandidateShow/CandidateShow'
+import VotingFAQ from '../FAQ/FAQ'
 
 export default class App extends Component {
   constructor() {
@@ -20,7 +21,9 @@ export default class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img className="iconBallot" src="https://i.imgur.com/52VN8Eo.png"></img>
+          <Link to="/">
+            <img className="iconBallot" src="https://i.imgur.com/52VN8Eo.png"></img>
+          </Link>
           <input className="searchBar"></input>
           <img className="hambug" src="https://i.imgur.com/3T1942U.png"></img>
         </header>
@@ -46,8 +49,8 @@ export default class App extends Component {
           <Route exact path='/RegisterVoter' render={() =>
             <RegisterVoter />
           } />
-          <Route exact path='/WhatToBring' render={() =>
-            <WhatToBring />
+          <Route exact path='/VotingFAQ' render={() =>
+            <VotingFAQ />
           } />
         </Switch>
       </div>

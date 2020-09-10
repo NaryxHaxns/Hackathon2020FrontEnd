@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const CandidateShow = (props) => {
   return (
     <div className="CandidatePresidentPage">
-      <div className="returnLink">
+      <div className="returnLinkShow">
         <h4>{"< "}Back to Presidential Candidates</h4>
       </div>
       <div className="ChunkShow">

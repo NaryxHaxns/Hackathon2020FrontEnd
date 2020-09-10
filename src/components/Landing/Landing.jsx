@@ -17,7 +17,9 @@ const Landing = (props) => {
         <FindCandidates />
         </Link>
         <FindPollLocation />
+        <Link to="/VotingFAQ">
         <WhatToBring />
+        </Link>
       </div>
     </div>
   );

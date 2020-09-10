@@ -1,0 +1,32 @@
+.FAQ {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.returnLink :visited {
+    color: #6B6B6B;
+}
+
+.stepFAQ {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.title {
+    background-color: #487C9C;
+    color: #EFEEEE;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.expanded {
+    background-color: #D1E7FC;
+    margin-top: -18px;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+.expanded li {
+    font-weight: bold;
+}

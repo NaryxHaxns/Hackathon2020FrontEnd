@@ -1,73 +1,77 @@
 .CandidatePresidentPage {
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
 }
 
-.returnLink {
-    margin-top: -40px;
-    margin-left: -30px;
+.returnLinkShow {
+  margin-top: -40px;
+  margin-left: -30px;
+  align-self: start;
+  margin-left: 20px;
+  color: #6b6b6b;
+  /* padding: 46px; */
 }
 
 .ChunkShow {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
 }
 
 .ChunkShow img {
-    width: 171px;
-    margin: 10px;
-    border-radius: 15px;
+  width: 171px;
+  margin: 10px;
+  border-radius: 15px;
 }
 
 .candidatedetail h4 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
 }
 
 .candidatedetail button {
-    background-color: #D1E7FC;
-    border-radius: 5px;
-    border: none;
-    padding: 15px;
+  background-color: #d1e7fc;
+  border-radius: 5px;
+  border: none;
+  padding: 15px;
 }
 
 .candidateStory {
-    margin: 0 auto;
-    text-align: left;
-    width: 75%;
+  margin: 0 auto;
+  text-align: left;
+  width: 75%;
 }
 
 .runningMate {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  width: 75%;
 }
 
 .runningMate img {
-    width: 117px;
-    margin: 10px;
-    border-radius: 15px;
+  width: 117px;
+  margin: 10px;
+  border-radius: 15px;
 }
 
 .officialSite {
-    margin: 20px;
+  margin: 20px;
 }
 
 .officialSiteLink {
-    color: #E43C4A;
+  color: #e43c4a;
 }
 
 .candidateButtons button {
-    border-radius: 5px;
-    border: none;
-    padding: 15px;
-    margin: 15px;
+  border-radius: 5px;
+  border: none;
+  padding: 15px;
+  margin: 15px;
 }
 
 .cartButton {
-    background-color: #487C9C;
-    color: #FFFFFF;
+  background-color: #487c9c;
+  color: #ffffff;
 }
