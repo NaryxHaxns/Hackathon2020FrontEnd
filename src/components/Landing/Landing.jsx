@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import CountdownClock from "../CountdownClock/CountdownClock";
 import FindCandidates from "../FindCandidates/FindCandidates";
 import FindPollLocation from "../FindPollLocation/FindPollLocation";
@@ -12,7 +13,9 @@ const Landing = (props) => {
       <CountdownClock />
       <div className="LandingPages">
         <RegisterVoter />
+        <Link to="/FindCandidates">
         <FindCandidates />
+        </Link>
         <FindPollLocation />
         <WhatToBring />
       </div>

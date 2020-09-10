@@ -1,0 +1,71 @@
+.PresidentPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.returnLink {
+    align-self: start;
+    margin-left: 20px;
+    color: #6B6B6B;
+    padding: 46px;
+}
+
+.PresLogo img {
+    height: 88px;
+}
+
+.pageTitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+hr {
+    width: 60%;
+}
+
+.candidateIntro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: left;
+    margin: 10px;
+}
+
+.LearnMore {
+    color: #E43C4A;
+}
+
+.Chunk {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Chunk img {
+    width: 175px;
+}
+
+.Sloth {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Sloth img {
+    width: 175px;
+}
+
+.Mouth {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Mouth img {
+    width: 175px;
+}

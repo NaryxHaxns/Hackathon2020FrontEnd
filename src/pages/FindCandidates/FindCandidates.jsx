@@ -1,5 +1,6 @@
 import React from "react";
 import './FindCandidates.css'
+import {Link} from 'react-router-dom';
 
 const ExploreCandidates = (props) => {
   return (
@@ -9,7 +10,7 @@ const ExploreCandidates = (props) => {
         <button>PROPOSITIONS</button>
       </div>
       <div className="Roles">
-          <button>President/Vice President</button>
+          <button><Link to="/FindCandidates/PresidentVicePresident">President/Vice President</Link></button>
           <button>U.S. House</button>
           <button>U.S. Senate</button>
           <button>State Senate</button>
