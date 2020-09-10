@@ -1,0 +1,40 @@
+.ExploreCandidates {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.CandidatesPropositions {
+  margin: 30px;
+}
+
+.CandidatesPropositions button {
+  padding: 10px;
+  margin: 5px;
+  width: 25%;
+  border-radius: 5px;
+  border: none;
+}
+
+.Roles {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.Roles button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #487c9c;
+  color: #d1e7fc;
+  border-radius: 5px;
+  border: none;
+}
+
+.active {
+    background-color: #487c9c;
+    color: #d1e7fc;  
+}

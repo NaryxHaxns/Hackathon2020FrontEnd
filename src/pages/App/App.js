@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Route, Switch } from 'react-router-dom'
 import "./App.css";
 import CountdownClock from "../../components/CountdownClock/CountdownClock"
-import FindCandidates from "../../components/FindCandidates/FindCandidates";
+import FindCandidates from "../FindCandidates/FindCandidates";
 import FindPollLocation from "../../components/FindPollLocation/FindPollLocation";
 import RegisterVoter from "../../components/RegisterVoter/RegisterVoter";
 import WhatToBring from "../../components/WhatToBring/WhatToBring";
@@ -18,7 +18,9 @@ export default class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <img className="iconBallot" src="https://i.imgur.com/52VN8Eo.png"></img>
           <input className="searchBar"></input>
+          <img className="hambug" src="https://i.imgur.com/3T1942U.png"></img>
         </header>
         <Switch>
           <Route exact path='/' render={() =>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import './CountdownClock.css'
+import "./CountdownClock.css";
 
 const CountdownClock = (props) => {
   //findTimeRemaining function
@@ -9,10 +9,10 @@ const CountdownClock = (props) => {
     let timeRemaining = {};
     if (difference > 0) {
       timeRemaining = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
+        Days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        Hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        Minutes: Math.floor((difference / 1000 / 60) % 60),
+        Seconds: Math.floor((difference / 1000) % 60),
       };
     }
     return timeRemaining;
@@ -45,13 +45,26 @@ const CountdownClock = (props) => {
 
   //return
   return (
-    <div>
+    <div className="CountdownClock">
       <h1 className="clockTitle">Election Day Countdown</h1>
-      {timerComponents.length ? (
-        timerComponents
-      ) : (
-        <span>It's Time To Vote!</span>
-      )}
+      <div className="clockParent">
+        <div className="clockDays">
+          <h1>{timeRemaining.Days}</h1>
+          <h3>Days</h3>
+        </div>
+        <div className="clockHours">
+          <h1>{timeRemaining.Hours}</h1>
+          <h3>Hours</h3>
+        </div>
+        <div className="clockMinutes">
+          <h1>{timeRemaining.Minutes}</h1>
+          <h3>Min</h3>
+        </div>
+        <div className="clockSeconds">
+          <h1>{timeRemaining.Seconds}</h1>
+          <h3>Sec</h3>
+        </div>
+      </div>
     </div>
   );
   //end return

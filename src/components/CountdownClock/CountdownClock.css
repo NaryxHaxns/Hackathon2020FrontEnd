@@ -1,3 +1,30 @@
+.CountdownClock {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .clockTitle {
     color: #1E3656;
+}
+
+.clockTime {
+    color: red;
+    background-color: saddlebrown;
+}
+
+.clockParent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* margin-left: 85px;
+    margin-right: 85px; */
+    margin: 0 auto;
+    width: 400px;
+    height: 77px;
+}
+
+.clockParent h1 {
+    color: #E43C4A;
+}
+
+.clockParent h3 {
+    color: #487C9C;
 }
