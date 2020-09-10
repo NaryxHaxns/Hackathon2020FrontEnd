@@ -46,7 +46,7 @@ const CountdownClock = (props) => {
   //return
   return (
     <div>
-      <h1>Election Day Countdown</h1>
+      <h1 className="clockTitle">Election Day Countdown</h1>
       {timerComponents.length ? (
         timerComponents
       ) : (

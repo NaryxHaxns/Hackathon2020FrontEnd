@@ -18,7 +18,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Election 2020</h1>
+          <input className="searchBar"></input>
         </header>
         <Switch>
           <Route exact path='/' render={() =>

@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1E3656;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,4 +34,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.searchBar {
+  margin: 10px;
+  width: 60%;
+  border-radius: 20px;
 }
