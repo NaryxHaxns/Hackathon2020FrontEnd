@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import './CountdownClock.css'
 
 const CountdownClock = (props) => {
   //findTimeRemaining function
@@ -19,7 +20,6 @@ const CountdownClock = (props) => {
   //end function
 
   const [timeRemaining, setTimeRemaining] = useState(findTimeRemaining());
-  const [year] = useState(new Date().getFullYear());
 
   //UseEffect function
   useEffect(() => {
@@ -46,7 +46,7 @@ const CountdownClock = (props) => {
   //return
   return (
     <div>
-      <h1>Countdown to Election {year}</h1>
+      <h1>Election Day Countdown</h1>
       {timerComponents.length ? (
         timerComponents
       ) : (
