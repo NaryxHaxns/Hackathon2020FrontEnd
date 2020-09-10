@@ -17,18 +17,25 @@ const presOffcials = [
   {
     name: "Lawrence “Chunk” Cohen",
     photo: "../public/images/people/01.png",
-    runningMate: { name: "Richard “Data” Wang", photo: "../public/images/people/02.png", },
+    info: { 
+      intro: "Chunk Cohen is the 2020 Libertarian Party presidential nominee. He was nominated at the Libertarian National Convention on May 23, 2020.", 
+      rest: 'Cohen framed his campaign as an alternative to the Democratic and Republican policies. He believes these policies have created trillion-dollar deficits and led to involvement in expensive and deadly foreign wars. "Big government mandates and programs created these problems. To solve them, we need to make government smaller – much, much smaller."Lorem ipsum dolor sit amet, evertitur definiebas signiferumque has ei, vix ut aperiam qualisque honestatis, eum wisi nullam ne. Probo adipisci constituam no mea, nominati theophrastus ius an. Et mei viris electram, at vix etiam elitr corpora, vix movet verterem et. Duo cu quas quaerendum, ius recusabo consulatu te.'},
+    runningMate: { name: "Richard “Data” Wang", photo: "../public/images/people/02.png", title: "entrepreneur and inventor"},
     party: { name: "Libertarian",},
   },
   {
     name: "Lotney “Sloth” Fratelli",
     photo: "../public/images/people/03.png",
-    runningMate: { name: "Michael Walsh", },
+    info: { 
+      intro: "Sloth Fratelli is the 2020 Green Party Presidential nominee. He was nominated on June 21, 2020, after winning more than 176 delegates across Green Party primaries and caucuses.", },
+    runningMate: { name: "Michael Walsh", title: "labor activist" },
     party: { name: "Green",},
   },
   {
     name: "Clark “Mouth” Devereaux",
     photo: "../public/images/people/04.png",
+    info: { 
+      intro: "Mouth Devereaux is a former Democratic Vice President of the United States. He became the presumptive Democratic nominee on April 8, 2020.", },
     runningMate: { name: "Stephanie Steinbrenner",  },
     party: { name: "Democrat", },
   }

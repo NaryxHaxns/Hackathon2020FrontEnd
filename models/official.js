@@ -6,7 +6,9 @@ const OfficialSchema = new Schema({
 
   photo: { type: String, required: true, default: "../public/images/defaults/silhouette.png" },
 
-  runningMate: { name: { type: String, required: true }, photo: { type: String, required: true, default: "../public/images/defaults/silhouette.png" } },
+  info: { intro: { type: String, required: true }, rest: { type: String,} },
+
+  runningMate: { name: { type: String, required: true }, photo: { type: String, required: true, default: "../public/images/defaults/silhouette.png" }, title: { type: String}},
 
   party: { name: { type: String, required: true }, photo: { type: String, required: true, default: "../public/images/Icons/PNG/megaphone.png" } },
 });
