@@ -4,11 +4,11 @@ const Schema = mongoose.Schema;
 const OfficialSchema = new Schema({
   name: { type: String, required: true },
 
-  photo: { type: String, required: true, default: "photo" },
+  photo: { type: String, required: true, default: "../public/images/defaults/silhouette.png" },
 
-  website: { type: String, required: true },
+  runningMate: { name: { type: String, required: true }, photo: { type: String, required: true, default: "../public/images/defaults/silhouette.png" } },
 
-  party: { type: String, required: true },
+  party: { name: { type: String, required: true }, photo: { type: String, required: true, default: "../public/images/Icons/PNG/megaphone.png" } },
 });
 
 const OfficialModel = mongoose.model("Official", OfficialSchema);

@@ -15,17 +15,23 @@ const propos = [
 
 const presOffcials = [
   {
-    name: "Howard the duck",
-    photo: "duck.jpg",
-    website: "www.WTF.com",
-    party: "Heghog",
+    name: "Lawrence “Chunk” Cohen",
+    photo: "../public/images/people/01.png",
+    runningMate: { name: "Richard “Data” Wang", photo: "../public/images/people/02.png", },
+    party: { name: "Libertarian",},
   },
   {
-    name: "Sonic the Hehog",
-    photo: "sonic.jpg",
-    website: "www.WTF.com",
-    party: "Guck",
+    name: "Lotney “Sloth” Fratelli",
+    photo: "../public/images/people/03.png",
+    runningMate: { name: "Michael Walsh", },
+    party: { name: "Green",},
   },
+  {
+    name: "Clark “Mouth” Devereaux",
+    photo: "../public/images/people/04.png",
+    runningMate: { name: "Stephanie Steinbrenner",  },
+    party: { name: "Democrat", },
+  }
 ];
 
 const locations =
@@ -113,3 +119,5 @@ db.Location.deleteMany({}, (err, result) => {
       console.log(`Added all loclations`);
     })
   );
+
+  setTimeout(function() {process.exit()}, 3000);
