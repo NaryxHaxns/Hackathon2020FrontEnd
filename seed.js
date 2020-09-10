@@ -1,7 +1,4 @@
 const db = require("./models");
-// const dbLocations = require("./models/location");
-// const dbOfficials = require("./models/official");
-// const dbPropositions = require("./models/proposition");
 
 const propos = [
   {
@@ -45,7 +42,7 @@ db.Location.deleteMany({}, (err, result) => {
     process.exit();
   }
 
-  console.log(`Cleared ${result.deletedCount} location`);
+  console.log(`Cleared ${result.deletedCount} locations`);
 })
 
   .then(() =>
@@ -66,7 +63,7 @@ db.Location.deleteMany({}, (err, result) => {
         process.exit();
       }
 
-      console.log(`Cleared ${result.deletedCount} Proposition`);
+      console.log(`Cleared ${result.deletedCount} Propositions`);
     })
   )
 
@@ -95,7 +92,7 @@ db.Location.deleteMany({}, (err, result) => {
           );
         });
 
-        db.Officials.create(presOfficals, (err, newOfficials) => {
+        db.Official.create(presOffcials, (err, newOfficials) => {
           let location = newLocations;
           if (err) {
             console.log(err);
